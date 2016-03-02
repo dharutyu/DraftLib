@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftLib.TestConsole", "Dra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DraftLib.TestWeb", "DraftLib.TestWeb\DraftLib.TestWeb.csproj", "{4733CF05-45AF-4BAD-842D-37C80B514B3C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontendTools", "FrontendTools", "{49DD0360-7826-4E63-ACE3-80E8A9C30BA9}"
+	ProjectSection(SolutionItems) = preProject
+		dh-base-request-service.js = dh-base-request-service.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
