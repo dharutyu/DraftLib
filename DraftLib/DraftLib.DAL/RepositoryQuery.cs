@@ -19,6 +19,7 @@ namespace DraftLib.DAL
 
         public RepositoryQuery(Repository<TEntity> repository)
         {
+
             this.repository = repository;
             includeProperties =
                 new List<Expression<Func<TEntity, object>>>();
@@ -54,7 +55,8 @@ namespace DraftLib.DAL
 
             return repository.Get(
                 filter,
-                orderByQuerable, includeProperties, page, pageSize);
+                orderByQuerable, includeProperties, page, pageSize)
+                .ToList();
         }
 
         public IEnumerable<TEntity> Get()

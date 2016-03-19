@@ -78,7 +78,7 @@ namespace DraftLib.DAL
             int? pageSize = null)
         {
             IQueryable<TEntity> query = dbSet;
-
+            
             includeProperties?.ForEach(i => { query = query.Include(i); });
 
             if (filter != null)
@@ -86,7 +86,7 @@ namespace DraftLib.DAL
 
             if (orderBy != null)
                 query = orderBy(query);
-
+         
             if (page != null && pageSize != null)
                 query = query
                     .Skip((page.Value - 1) * pageSize.Value)
