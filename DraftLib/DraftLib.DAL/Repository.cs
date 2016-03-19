@@ -94,5 +94,10 @@ namespace DraftLib.DAL
 
             return query;
         }
+
+        public void AddRange(IEnumerable<TEntity> entities)
+        {
+            context.Set<TEntity>().AddRange(entities); // TODO
+        }
     }
 }
